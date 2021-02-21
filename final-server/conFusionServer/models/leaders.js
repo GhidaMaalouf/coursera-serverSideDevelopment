@@ -1,7 +1,8 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-var leaderSchema = new Schema({
+const Schema = mongoose.Schema;
+
+const leaderSchema = new Schema({
     name: {
         type: String,
         required: true,
@@ -31,6 +32,6 @@ var leaderSchema = new Schema({
     timestamps: true
 });
 
-var Leaders = mongoose.model('Leader', leaderSchema);
+const Leaders = mongoose.model('Leader', leaderSchema);
 
 module.exports = Leaders;
